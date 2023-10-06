@@ -18,7 +18,7 @@ function Header({path}) {
         <div className="logo">digital</div>
 
         <div className="nav-bar-ham"
-        onClick={handleHam}
+        onClick={handleHam }
         >
           <i className="fa fa-bars" aria-hidden="true"></i>
         </div>
