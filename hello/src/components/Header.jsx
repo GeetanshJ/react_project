@@ -1,37 +1,42 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Link } from "react-router-dom";
 
-function Header() {
-  return (
-    <header id="project-div">
+function Header({path}) {
+  const [ham,setHam] = useState(false);
+
+  function handleHam(){
+    if(ham == true){
+      setHam(false);
+    }
+    else{
+      setHam(true);
+    }
+  }
+    return (
+    <header id="project-div" class="header-2">
       <div className="nav-bar">
         <div className="logo">digital</div>
 
-        <div className="nav-bar-ham">
+        <div className="nav-bar-ham"
+        onClick={handleHam}
+        >
           <i className="fa fa-bars" aria-hidden="true"></i>
         </div>
-        <ul className="listing">
-          <li><a href="#feature-div">FEATURES</a></li>
-          <li><a href="#offer-div">OFFER</a></li>
-          <li><a href="#pricing-div">PRICING</a></li>
-          <li><a href="#client-div">CLIENTS</a></li>
-          <li><a href="#fact-div">FACTS</a></li>
-          <li><a href="#project-div">PROJECTS</a></li>
-          <li><a href="#team-div">TEAMS</a></li>
-          <li><a href="#contact-div">CONTACTS</a></li>
+          <ul className={
+            "listing"+(ham ? " active" :"")
+          }>
+          <li><Link style={{color:path=="feature" ? "orange" : "white"}} to="/feature">FEATURES</Link></li>
+          {/* <li><Link to="teams">OFFER</Link></li> */}
+          <li><Link style={{color:path=="prices" ? "orange" : "white"}} to="/prices">PRICING</Link></li>
+          {/* <li><Link to="teams">CLIENTS</Link></li>
+          <li><Link to="teams">FACTS</Link></li>
+          <li><Link to="teams">PROJECTS</Link></li> */}
+          <li><Link style={{color:path=="teams" ? "orange" : "white"}} to="/teams">TEAMS</Link></li>
+          <li><Link style={{color:path=="contacts" ? "orange" : "white"}}  to="/contacts">CONTACTS</Link></li>
         </ul>
-      </div>
+    </div>
 
-      <h1>Simply the Best</h1>
-      <p>Reasons for Choosing Us</p>
-      <div className="content-header">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque,
-        dolores?
-      </div>
-      <div className="content-header-1">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque,
-        dolores?
-      </div>
-      <button className="btn">READ MORE</button>
+      
     </header>
   );
 }

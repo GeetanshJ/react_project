@@ -3,7 +3,7 @@ import React from 'react'
 function Prop(props) {
   return (
     <>
-     <div>{props.title}</div>
+      <div>{props.title}</div>
     </>
   )
 }
