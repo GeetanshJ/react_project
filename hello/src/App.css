@@ -167,7 +167,7 @@ section {
   margin: 1rem;
   text-align: center;
   border-radius: 10%;
-  width: 40vh;
+  width: 20vw;
   background-color: rgb(255, 255, 255);
 }
 
@@ -1016,9 +1016,10 @@ article {
     margin: 1rem;
     text-align: center;
     border-radius: 10%;
-    width: 40vh;
+    width: 50%;
     background-color: rgb(255, 255, 255);
   }
+
 
   .nav-bar {
       padding-top: 1rem;
@@ -1386,7 +1387,13 @@ article {
 }
 
 
+@media (max-width:300px){
+  .header-fig-container h3{
+    font-size: 15px;
+    font-weight: 600;
+  }
 
+}
 /* Media Query for Tablets Ipads portrait mode */
 @media (min-width: 745px) and (max-width: 1024px) {
 
@@ -1414,10 +1421,13 @@ article {
   margin: 1rem;
   text-align: center;
   border-radius: 10%;
-  width: 40vh;
+  width: auto;
   background-color: rgb(255, 255, 255);
 }
 
+.header-fig-container h3{
+text-align: center;
+}
   .nav-bar {
       padding-top: 1rem;
       display: flex;
@@ -1770,7 +1780,7 @@ article {
   margin: 1rem;
   text-align: center;
   border-radius: 10%;
-  width: 40vh;
+  width: 20vw;
   background-color: rgb(255, 255, 255);
 }
 

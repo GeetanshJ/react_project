@@ -1,11 +1,11 @@
 import React from "react";
-import { Route,Routes,BrowserRouter } from "react-router-dom";
-import Home from "./Home";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Clients from "./Clients";
 import Contact from "./Contact";
-import Header from "./components/Header";
-import Teams from "./Teams";
 import Feature from "./Feature";
+import Home from "./Home";
 import Prices from "./Prices";
+import Teams from "./Teams";
 
 function App() {
     
@@ -17,6 +17,7 @@ function App() {
                     <Route path="contact" element={<Contact/>} />
                     <Route path="teams" element={<Teams/>} />
                     <Route path="prices" element={<Prices/>} />
+                    <Route path="clients" element={<Clients/>} />
                     <Route path="feature" element={<Feature/>} />
                 </Route>
             </Routes>

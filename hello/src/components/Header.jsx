@@ -6,9 +6,11 @@ function Header({path}) {
 
   function handleHam(){
     if(ham == true){
+      console.log("dsdss");
       setHam(false);
     }
     else{
+      console.log("dsdssdgsgfgfdskkks");
       setHam(true);
     }
   }
@@ -18,21 +20,21 @@ function Header({path}) {
         <div className="logo">digital</div>
 
         <div className="nav-bar-ham"
-        onClick={handleHam }
+        onClick={handleHam}
         >
           <i className="fa fa-bars" aria-hidden="true"></i>
         </div>
           <ul className={
-            "listing"+(ham ? " active" :"")
+            "listing"+(ham ? " active" : "")
           }>
           <li><Link style={{color:path=="feature" ? "orange" : "white"}} to="/feature">FEATURES</Link></li>
           {/* <li><Link to="teams">OFFER</Link></li> */}
           <li><Link style={{color:path=="prices" ? "orange" : "white"}} to="/prices">PRICING</Link></li>
-          {/* <li><Link to="teams">CLIENTS</Link></li>
-          <li><Link to="teams">FACTS</Link></li>
-          <li><Link to="teams">PROJECTS</Link></li> */}
+          <li><Link style={{color:path=="clients" ? "orange" : "white"}} to="/clients">CLIENTS</Link></li>
+          {/* <li><Link to="teams">FACTS</Link></li> */}
+          {/* <li><Link to="teams">PROJECTS</Link></li> */}
           <li><Link style={{color:path=="teams" ? "orange" : "white"}} to="/teams">TEAMS</Link></li>
-          <li><Link style={{color:path=="contacts" ? "orange" : "white"}}  to="/contacts">CONTACTS</Link></li>
+          <li><Link style={{color:path=="contact" ? "orange" : "white"}}  to="/contact">CONTACTS</Link></li>
         </ul>
     </div>
 
