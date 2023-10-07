@@ -909,7 +909,7 @@ article {
 }
 
 .touch-1 {
-  margin-top: 5rem;
+  margin-top: 7rem;
   display: flex;
   flex-direction: column;
   background-image: linear-gradient(70deg, rgba(206, 120, 40,0.72), rgba(22, 76, 201,0.5)), url('assets/get-in-touch.png');
@@ -1000,6 +1000,19 @@ article {
 
 
 @media (max-width: 745px) {
+  .touch-1 {
+    /* position: static; */
+    margin-top: 7rem;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(70deg, rgba(206, 120, 40,0.72), rgba(22, 76, 201,0.5)), url('assets/get-in-touch.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+  }
 
   .header-1 {
       /* overflow-y: hidden; */
@@ -1052,6 +1065,7 @@ article {
 
   .nav-bar .logo {
       padding-left: 2rem;
+      font-size: 3rem;
   }
 
   header h1 {
@@ -1074,6 +1088,7 @@ article {
   }
 
   .nav-bar-ham {
+    padding-bottom: 1rem;
       cursor: pointer;
       display: flex;
       font-size: 2rem;
@@ -1116,6 +1131,7 @@ article {
 
   .logo {
       margin-bottom: 1rem;
+      font-size: 1rem;
   }
 
   .features {
@@ -1377,7 +1393,7 @@ article {
       margin-top: 15rem;
       justify-content: center;
       align-items: center;
-      padding-bottom: 50px;
+      margin-bottom: 50px;
       padding-top: 50px;
   }
 
@@ -1403,7 +1419,7 @@ article {
   }
 
   .touch{
-      margin-top:120vh;
+      margin-top:100rem;
   }
 }
 
@@ -1475,6 +1491,7 @@ text-align: center;
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
+      padding-bottom: 1rem;
       align-items: center;
   }
 
