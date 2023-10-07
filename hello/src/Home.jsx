@@ -51,7 +51,7 @@ const Home = () => {
                         <li><Link to="prices">PRICING</Link></li>
                         <li><Link to="clients">CLIENTS</Link></li>
                         <li><Link to="teams">FACTS</Link></li>
-                        <li><Link to="teams">PROJECTS</Link></li>
+                        <li><Link to="project">PROJECTS</Link></li>
                         <li><Link to="teams">TEAMS</Link></li>
                         <li><Link to="contact">CONTACTS</Link></li>
                     </ul>

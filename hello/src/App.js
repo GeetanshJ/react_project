@@ -6,6 +6,7 @@ import Feature from "./Feature";
 import Home from "./Home";
 import Prices from "./Prices";
 import Teams from "./Teams";
+import Project from "./Project";
 
 function App() {
     
@@ -19,6 +20,7 @@ function App() {
                     <Route path="prices" element={<Prices/>} />
                     <Route path="clients" element={<Clients/>} />
                     <Route path="feature" element={<Feature/>} />
+                    <Route path="project" element={<Project/>} />
                 </Route>
             </Routes>
         </BrowserRouter>
