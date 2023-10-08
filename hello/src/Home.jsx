@@ -54,6 +54,8 @@ const Home = () => {
                         <li><Link to="project">PROJECTS</Link></li>
                         <li><Link to="teams">TEAMS</Link></li>
                         <li><Link to="contact">CONTACTS</Link></li>
+                        <li><Link to="signup">SIGNUP</Link></li>
+                        <li><Link to="login">LOGIN</Link></li>
                     </ul>
                 </div>
 

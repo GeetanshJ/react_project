@@ -35,6 +35,8 @@ function Header({path}) {
           <li><Link style={{color:path=="project" ? "orange" : "white"}} to="/project">PROJECTS</Link></li>
           <li><Link style={{color:path=="teams" ? "orange" : "white"}} to="/teams">TEAMS</Link></li>
           <li><Link style={{color:path=="contact" ? "orange" : "white"}}  to="/contact">CONTACTS</Link></li>
+          <li><Link style={{color:path=="signup" ? "orange" : "white"}}  to="/signup">SIGN UP</Link></li>
+          <li><Link style={{color:path=="login" ? "orange" : "white"}}  to="/login">LOGIN</Link></li>
         </ul>
     </div>
 
