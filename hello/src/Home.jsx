@@ -34,7 +34,7 @@ const Home = () => {
         <div>
 
 
-            <header id="project-div" class="header-1">
+            <header id="project-div" class="header-1" >
                 <div class="nav-bar">
                     <div class="logo">digital</div>
 

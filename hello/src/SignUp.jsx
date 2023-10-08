@@ -37,7 +37,8 @@ const SignUp = () => {
         }
 
         else{
-            alert("Signed In")
+            alert("Signed In");
+            <Link to="home"></Link>
         }
         
     }

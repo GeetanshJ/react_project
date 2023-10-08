@@ -37,7 +37,7 @@ const Contact = () => {
     }
     return (
         <div>
-        <Header path="contacts"/>
+        <Header path="contact"/>
             <div class="contact_us_2">
                 <div class="responsive-container-block big-container">
                     <div class="blueBG">
