@@ -7,8 +7,12 @@ const Login = () => {
     const[pass,setPass] = useState("")
 
     function logged(){
-        if(name==="" || pass===""){
-            alert("Fill details first")
+        if(name==="" ){
+            alert("Enter email")
+        }
+
+        else if(pass==="" ){
+            alert("Enter password")
         }
         
         else{

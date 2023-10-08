@@ -12,16 +12,32 @@ const SignUp = () => {
     
 
     function signed(){
-        if(pass1 !== pass2){
-            alert("Password does not matched")
+        if(first === ""){
+            alert("Enter First name")
         }
-        
-        else if(first==="" || last===""|| email==="" || pass1===""){
-            alert("Fill details first")
+
+        else if(last === ""){
+            alert("Enter Last name")
         }
-        
+
+        else if(email === ""){
+            alert("Enter email")
+        }
+
+        else if(pass1 === ""){
+            alert("Enter password")
+        }
+
+        else if(pass2 === ""){
+            alert("Enter confirmation password")
+        }
+
+        else if(pass1 !== pass2){
+            alert("Password does not match")
+        }
+
         else{
-            alert("Signed Up")
+            alert("Signed In")
         }
         
     }
