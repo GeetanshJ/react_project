@@ -1,10 +1,29 @@
-import React from 'react'
+import React,{useState} from 'react'
 import Header from './components/Header'
 import Footer from './components/Footer';
 import { Link } from 'react-router-dom';
 const SignUp = () => {
+    const[first,setFirst] = useState("")
+    const[last,setLast] = useState("")
+    const[email,setEmail] = useState("")
+    const[pass1,setPass1] = useState("")
+    const[pass2,setPass2] = useState("")
+
+    
+
     function signed(){
-        alert("Signed Up")
+        if(pass1 !== pass2){
+            alert("Password does not matched")
+        }
+        
+        else if(first==="" || last===""|| email==="" || pass1===""){
+            alert("Fill details first")
+        }
+        
+        else{
+            alert("Signed Up")
+        }
+        
     }
     return (
 
@@ -29,31 +48,31 @@ const SignUp = () => {
                                         <p class="text-blk input-title">
                                             FIRST NAME*
                                         </p>
-                                        <input class="input" id="ijowk" name="FirstName" required placeholder="Please enter first name..." />
+                                        <input class="input" id="ijowk"onChange={(e)=>{setFirst(e.target.value)}} value={first} name="FirstName" required placeholder="Please enter first name..." />
                                     </div>
                                     <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
                                         <p class="text-blk input-title">
                                             LAST NAME*
                                         </p>
-                                        <input class="input" id="indfi" name="Last Name" required placeholder="Please enter last name..." />
+                                        <input class="input" id="indfi" onChange={(e)=>{setLast(e.target.value)}} value={last} name="Last Name" required placeholder="Please enter last name..." />
                                     </div>
                                     <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
                                         <p class="text-blk input-title">
                                             EMAIL*
                                         </p>
-                                        <input class="input" id="ipmgh" name="Email"  required placeholder="Please enter email..." />
+                                        <input class="input" id="ipmgh"onChange={(e)=>{setEmail(e.target.value)}} value={email} name="Email"  required placeholder="Please enter email..." />
                                     </div>
                                     <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
                                         <p class="text-blk input-title">
                                             PASSWORD*
                                         </p>
-                                        <input class="input" id="imgis" name="Password" type='password' required placeholder="Please enter password..." />
+                                        <input class="input" id="imgis" name="Password" onChange={(e)=>{setPass1(e.target.value)}} value={pass1} type='password' required placeholder="Please enter password..." />
                                     </div>
                                     <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
                                         <p class="text-blk input-title">
                                             CONFIRM PASSWORD*
                                         </p>
-                                        <input class="input" id="imgis" name="Password" type='password' required placeholder="Please enter password..." />
+                                        <input class="input" id="imgis" name="Password" type='password' onChange={(e)=>{setPass2(e.target.value)}} value={pass2} required placeholder="Please enter password..." />
                                     </div>
                                 </div>
                                 <button class="submit-btn" onClick={signed}>

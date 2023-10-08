@@ -1,10 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import { Link } from 'react-router-dom'
 const Login = () => {
+    const[name,setName] = useState("")
+    const[pass,setPass] = useState("")
+
     function logged(){
-        alert("Logged In")
+        if(name==="" || pass===""){
+            alert("Fill details first")
+        }
+        
+        else{
+            alert("Logged In")
+        }
     }
     return (
         
@@ -27,13 +36,13 @@ const Login = () => {
                                         <p class="text-blk input-title">
                                             EMAIL*
                                         </p>
-                                        <input class="input" id="ipmgh" name="Email"  required placeholder="Please enter email..." />
+                                        <input class="input" id="ipmgh" name="Email" onChange={(e)=>{setName(e.target.value)}} value={name} required placeholder="Please enter email..." />
                                     </div>
                                     <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
                                         <p class="text-blk input-title">
                                             PASSWORD*
                                         </p>
-                                        <input class="input" id="imgis" name="Password" type='password' required placeholder="Please enter password..." />
+                                        <input class="input" id="imgis" name="Password" onChange={(e)=>{setPass(e.target.value)}} value={pass} type='password' required placeholder="Please enter password..." />
                                     </div>
                                 </div>
                                 <button class="submit-btn" onClick={logged}>

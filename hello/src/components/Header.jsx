@@ -28,10 +28,10 @@ function Header({path}) {
             "listing"+(ham ? " active" : "")
           }>
           <li><Link style={{color:path=="feature" ? "orange" : "white"}} to="/feature">FEATURES</Link></li>
-          {/* <li><Link to="teams">OFFER</Link></li> */}
+          <li><Link style={{color:path=="offer" ? "orange" : "white"}} to="offer">OFFER</Link></li>
           <li><Link style={{color:path=="prices" ? "orange" : "white"}} to="/prices">PRICING</Link></li>
           <li><Link style={{color:path=="clients" ? "orange" : "white"}} to="/clients">CLIENTS</Link></li>
-          {/* <li><Link to="teams">FACTS</Link></li> */}
+          <li><Link style={{color:path=="facts" ? "orange" : "white"}} to="/facts">FACTS</Link></li>
           <li><Link style={{color:path=="project" ? "orange" : "white"}} to="/project">PROJECTS</Link></li>
           <li><Link style={{color:path=="teams" ? "orange" : "white"}} to="/teams">TEAMS</Link></li>
           <li><Link style={{color:path=="contact" ? "orange" : "white"}}  to="/contact">CONTACTS</Link></li>

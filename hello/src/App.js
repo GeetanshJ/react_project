@@ -9,6 +9,8 @@ import Teams from "./Teams";
 import Project from "./Project";
 import SignUp from "./SignUp";
 import Login from "./Login";
+import Offers from "./Offers";
+import Facts from "./Facts";
 
 function App() {
     
@@ -25,6 +27,8 @@ function App() {
                     <Route path="project" element={<Project/>} />
                     <Route path="signup" element={<SignUp/>} />
                     <Route path="login" element={<Login/>} />
+                    <Route path="offer" element={<Offers/>} />
+                    <Route path="facts" element={<Facts/>} />
                 </Route>
             </Routes>
         </BrowserRouter>

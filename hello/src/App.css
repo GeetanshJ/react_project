@@ -1046,7 +1046,7 @@ article {
   text-align: center;
 }
 
-@media (max-width: 745px) {
+@media (max-width: 895px) {
 
 
   .header-1 {
@@ -1467,7 +1467,7 @@ article {
   }
 }
 /* Media Query for Tablets Ipads portrait mode */
-@media (min-width: 745px) and (max-width: 1024px) {
+@media (min-width: 895px) and (max-width: 1134px) {
 
   .proffesional{
     margin-bottom: 10rem;
@@ -1839,7 +1839,7 @@ text-align: center;
 }
 
 
-@media (min-width: 1024px) and (max-width: 1300px) {
+@media (min-width: 1134px) and (max-width: 1300px) {
 
   .teams-container {
       display: none;

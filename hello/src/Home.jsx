@@ -47,10 +47,10 @@ const Home = () => {
                         "listing " + (ham ? "active" : "")
                     }>
                         <li><Link to="feature">FEATURES</Link></li>
-                        <li><Link to="teams">OFFER</Link></li>
+                        <li><Link to="offer">OFFER</Link></li>
                         <li><Link to="prices">PRICING</Link></li>
                         <li><Link to="clients">CLIENTS</Link></li>
-                        <li><Link to="teams">FACTS</Link></li>
+                        <li><Link to="facts">FACTS</Link></li>
                         <li><Link to="project">PROJECTS</Link></li>
                         <li><Link to="teams">TEAMS</Link></li>
                         <li><Link to="contact">CONTACTS</Link></li>
