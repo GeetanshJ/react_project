@@ -38,10 +38,10 @@ const SignUp = () => {
 
         else{
             alert("Signed In");
-            <Link to="home"></Link>
         }
-        
     }
+
+    
     return (
 
         <div>
@@ -92,8 +92,8 @@ const SignUp = () => {
                                         <input class="input" id="imgis" name="Password" type='password' onChange={(e)=>{setPass2(e.target.value)}} value={pass2} required placeholder="Please enter password..." />
                                     </div>
                                 </div>
-                                <button class="submit-btn" onClick={signed}>
-                                    Submit
+                                <button class="submit-btn" onClick={signed} target="home" type='submit'>
+                                    SIGN UP
                                 </button>
                             </div>
                             
