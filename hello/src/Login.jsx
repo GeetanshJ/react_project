@@ -8,7 +8,24 @@ import Footer from './components/Footer';
 const Login = () => {
     const [name, setName] = useState("")
     const [pass, setPass] = useState("")
+    const[all,setAll] = useState(false)
+    const[show_text,setShow] = useState("SHOW DATA")
+
     const navigate = useNavigate();
+
+    function showed(){
+
+        if(show_text === "SHOW DATA" && all === false){
+            setShow("HIDE DATA");
+            setAll(true);
+        }
+
+        else{
+            setShow("SHOW DATA");
+            setAll(false);
+        }
+
+    }
 
     function logged() {
         if (name === "") {
@@ -22,21 +39,8 @@ const Login = () => {
         else {
             alert("Logged In");
             navigate('/');
-        
-
-            // nav();
         }
     }
-
-    // function nav(){
-    //     <BrowserRouter>
-    //         <Routes>
-    //             <Route>
-    //                 <Route index element={<Home/>}/>
-    //             </Route>
-    //         </Routes>
-    //     </BrowserRouter>
-    // }
 
     return (
 
@@ -68,6 +72,10 @@ const Login = () => {
                                         <input class="input" id="imgis" name="Password" onChange={(e) => { setPass(e.target.value) }} value={pass} type='password' required placeholder="Please enter password..." />
                                     </div>
                                 </div>
+                                <div class="submit-btn1" onClick={showed} >
+                                    {show_text}
+                                </div>
+
                                 <button class="submit-btn" onClick={logged}>LOGIN</button>
                             </div>
                             <div style={{ textAlign: 'center', marginTop: '1rem', fontSize: '1.3rem' }}>Want To SIGNUP?</div>
@@ -76,6 +84,11 @@ const Login = () => {
 
                         </form>
                     </div>
+                </div>
+
+                <div className = {(all  ? " actual " : " demo ")}>
+                    <p className={"data"}>Email: {name}</p>
+                    <p className={"data"}>Password: {pass}</p>
                 </div>
             </div>
             <Footer />

@@ -1,15 +1,32 @@
 import React,{useState} from 'react'
 import Header from './components/Header'
 import Footer from './components/Footer';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 const SignUp = () => {
     const[first,setFirst] = useState("")
     const[last,setLast] = useState("")
     const[email,setEmail] = useState("")
     const[pass1,setPass1] = useState("")
     const[pass2,setPass2] = useState("")
+    const[all,setAll] = useState(false)
+    const[show_text,setShow] = useState("SHOW DATA")
 
-    
+    let navigate = useNavigate();
+
+
+    function showed(){
+        if(show_text === "SHOW DATA" && all === false){
+            setShow("HIDE DATA");
+            setAll(true);
+        }
+
+        else{
+            setShow("SHOW DATA");
+            setAll(false);
+        }
+
+    }
+
 
     function signed(){
         if(first === ""){
@@ -38,8 +55,13 @@ const SignUp = () => {
 
         else{
             alert("Signed In");
+            navigate("/login")
         }
     }
+
+
+
+
 
     
     return (
@@ -92,7 +114,12 @@ const SignUp = () => {
                                         <input class="input" id="imgis" name="Password" type='password' onChange={(e)=>{setPass2(e.target.value)}} value={pass2} required placeholder="Please enter password..." />
                                     </div>
                                 </div>
-                                <button class="submit-btn" onClick={signed} target="home" type='submit'>
+
+                                <div class="submit-btn1" onClick={showed} >
+                                    {show_text}
+                                </div>
+
+                                <button class="submit-btn" onClick={signed} target="home">
                                     SIGN UP
                                 </button>
                             </div>
@@ -101,8 +128,16 @@ const SignUp = () => {
                             <div  style={{textAlign:'center',marginTop:'0.5em'}}><Link to="/login" style={{textAlign:'center',fontSize:'1.3rem',textDecoration:'none',color:'Orange'}}>LOGIN</Link></div>
 
                         </form>
-                    </div>
+
+                        </div>
                 </div>
+            </div>
+
+            <div className = {(all  ? " actual " : " demo ")}>
+                <p className={"data"}>First Name: {first}</p>
+                <p className={"data"}>Last Name: {last}</p>
+                <p className={"data"}>Email: {email}</p>
+                <p className={"data"}>Password: {pass1}</p>
             </div>
             <Footer />
         </div>

@@ -8,7 +8,21 @@ const Contact = () => {
     const[email,SetEmail] = useState("")
     const[phone,SetPhone] = useState("")
     const[mind,SetMind] = useState("")
-    
+    const[all,setAll] = useState(false)
+    const[show_text,setShow] = useState("SHOW DATA")
+
+    function showed(){
+        if(show_text === "SHOW DATA" && all === false){
+            setShow("HIDE DATA");
+            setAll(true);
+        }
+
+        else{
+            setShow("SHOW DATA");
+            setAll(false);
+        }
+
+    }
 
     function Contact(){
         if(first === ""){
@@ -83,6 +97,10 @@ const Contact = () => {
                                         <textarea class="textinput" onChange={(e) => {SetMind(e.target.value)}} value={mind} id="i5vyy" required placeholder="Please enter query..."></textarea>
                                     </div>
                                 </div>
+
+                                <div class="submit-btn1" onClick={showed} >
+                                    {show_text}
+                                </div>
                                 <button class="submit-btn" onClick={Contact}>
                                     Submit
                                 </button>
@@ -90,8 +108,18 @@ const Contact = () => {
 
                         </form>
                     </div>
+
                 </div>
             </div>
+
+
+            <div className = {(all  ? " actual " : " demo ")}>
+                        <p className={"data"}>First Name: {first}</p>
+                        <p className={"data"}>Last Name: {last}</p>
+                        <p className={"data"}>Email: {email}</p>
+                        <p className={"data"}>Phone Number: {phone}</p>
+                        <p className={"data"}>Query: {mind}</p>
+                    </div>
             <Footer/>
         </div>
     )
