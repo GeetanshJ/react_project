@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
-import Header from './components/Header'
+import React, { useRef, useState } from 'react'
 import Footer from './components/Footer'
+import Header from './components/Header'
 
 const Contact = () => {
     const[first,SetFirst] = useState("")
@@ -11,7 +11,29 @@ const Contact = () => {
     const[all,setAll] = useState(false)
     const[show_text,setShow] = useState("SHOW DATA")
 
+    const first_ref = useRef();
+    const last_ref = useRef();
+    const email_ref = useRef();
+    const phone_ref = useRef();
+    const mind_ref = useRef();
+
+
+    const handleRef = () => {
+        SetFirst(first_ref.current.value);
+
+        SetLast(last_ref.current.value);
+
+        SetEmail(email_ref.current.value);
+
+        SetPhone(phone_ref.current.value);
+
+        SetMind(mind_ref.current.value);
+    };
+
     function showed(){
+
+
+        handleRef();
         if(show_text === "SHOW DATA" && all === false){
             setShow("HIDE DATA");
             setAll(true);
@@ -70,35 +92,35 @@ const Contact = () => {
                                         <p class="text-blk input-title">
                                             FIRST NAME*
                                         </p>
-                                        <input class="input" type="text" onChange={(e) => {SetFirst(e.target.value)}} value={first} id="ijowk" name="FirstName" required placeholder="Please enter first name..." />
+                                        <input class="input" type="text"   id="ijowk" ref={first_ref} name="FirstName" required placeholder="Please enter first name..." />
                                     </div>
                                     <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
                                         <p class="text-blk input-title">
                                             LAST NAME*
                                         </p>
-                                        <input class="input" type="text" id="indfi" onChange={(e) => {SetLast(e.target.value)}} value={last} name="Last Name" required placeholder="Please enter last name..." />
+                                        <input class="input" type="text" id="indfi" ref={last_ref} name="Last Name" required placeholder="Please enter last name..." />
                                     </div>
                                     <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
                                         <p class="text-blk input-title">
                                             EMAIL*
                                         </p>
-                                        <input class="input" type="email" id="ipmgh" onChange={(e) => {SetEmail(e.target.value)}} value={email} name="Email"  required placeholder="Please enter email..." />
+                                        <input class="input" type="email" id="ipmgh"ref={email_ref} name="Email"  required placeholder="Please enter email..." />
                                     </div>
                                     <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
                                         <p class="text-blk input-title">
                                             PHONE NUMBER*
                                         </p>
-                                        <input class="input" type = "number"id="imgis" onChange={(e) => {SetPhone(e.target.value)}} value={phone} name="PhoneNumber" required placeholder="Please enter phone number..." />
+                                        <input class="input" type = "number"id="imgis"ref={phone_ref} name="PhoneNumber" required placeholder="Please enter phone number..." />
                                     </div>
                                     <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-12 wk-ipadp-12" id="i634i">
                                         <p class="text-blk input-title">
                                             WHAT DO YOU HAVE IN MIND*
                                         </p>
-                                        <textarea class="textinput" onChange={(e) => {SetMind(e.target.value)}} value={mind} id="i5vyy" required placeholder="Please enter query..."></textarea>
+                                        <textarea class="textinput"ref={mind_ref} id="i5vyy" required placeholder="Please enter query..."></textarea>
                                     </div>
                                 </div>
 
-                                <div class="submit-btn1" onClick={showed} >
+                                <div class="submit-btn1" onClick={showed} onChange={handleRef} >
                                     {show_text}
                                 </div>
                                 <button class="submit-btn" onClick={Contact}>
