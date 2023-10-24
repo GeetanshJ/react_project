@@ -1,8 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import img20 from "./assets/offer.jpg";
+import {useNavigate } from "react-router-dom";
 const Offers = () => {
+    // const[cnt,setCnt] = useState(100);
+    const nav = useNavigate();
+
+    function navigate(){
+        nav('/prices');
+    }
+
     return (
         <div>
             <Header path="offer" />
@@ -31,6 +39,13 @@ const Offers = () => {
                 >
                     20% disscount only for first 100 users
                 </span>
+            </div>
+
+            <div>
+                <button class="p-btn"
+                style={{display:"flex",margin:"2rem auto",cursor:"pointer"}} onClick={navigate}>Claim Offer</button>
+
+                {/* <div>Hurry Up Only {cnt} left</div> */}
             </div>
             <Footer />
         </div>

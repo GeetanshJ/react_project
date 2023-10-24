@@ -46,9 +46,8 @@ const Prices = () => {
                                     fontFamily: "arial",
                                 }}
                             >
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum
-                                nihil veritatis accusamus eveniet odio temporibus dolores
-                                aspernatur.
+                                Geetansh's website design services are exceptional. He combines creativity and technical expertise to create user-friendly, visually appealing websites that align perfectly with the brand's identity and goals, all while staying up-to-date with the latest design trends.
+
                             </p>
                         </span>
                     </div>
@@ -58,22 +57,20 @@ const Prices = () => {
                             <p>Feature</p>
                         </div>
                         <ul class="p-list">
-                            <li>Lorem ipsum dolor sitr</li>
-                            <li>Lorem ipsum dolor sitr</li>
-                            <li>voluptatem ratione</li>
-                            <li>ad odio architecto quis</li>
-                            <li>esse inventore! Non</li>
-                            <li>quae, reprehenderit odit amet!</li>
+                        <li>Geetansh crafts unique website designs tailored to your brand.</li>
+                            <li>His layouts prioritize easy navigation and a great user experience.</li>
+                            <li>Websites work flawlessly on any device, enhancing accessibility.</li>
+
                         </ul>
 
                         <ul className={
                             "prof_more_header " +
                             (proff_text ? "prof_active_header" : "")
                         }>
-                            <li>Lorem ipsum dolor sitr</li>
-                            <li>ad odio architecto quis</li>
-                            <li>esse inventore! Non</li>
-                            <li>quae, reprehenderit odit amet!</li>
+                            <li>Geetansh crafts unique website designs tailored to your brand.</li>
+                            <li>His layouts prioritize easy navigation and a great user experience.</li>
+                            <li>Websites work flawlessly on any device, enhancing accessibility.</li>
+                            <li> Every aspect, from fonts to imagery, receives meticulous attention.</li>
                         </ul>
                         <div class="p-btn-container">
                             <button class="p-btn"onClick={proffessionals}>
@@ -83,18 +80,12 @@ const Prices = () => {
                 </div>
                 <div class="proffesional-3">
                     <div class="p3-container">
-                        <h1 class="p3-h1">Take Your Website To The Next Level</h1>
+                    <h1 class="p3-h1">Take Your Website To The Next Level</h1>
                         <p class="p3-p1">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum
-                            commodi doloribus modi facilis maxime error quo architecto,
-                            eveniet quod sit animi molestiae veniam, delectus, magni incidunt
-                            minima cumque distinctio dicta!
+                        Taking your website to the next level requires a strategic focus on user experience, design, and communication to ensure it aligns with your brand's identity and objectives.
                         </p>
                         <p class="p3-p2">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
-                            veniam minima fugiat nisi commodi, recusandae minus dolores
-                            ducimus aliquid accusantium eius molestias voluptatibus hic et
-                            nobis a cupiditate voluptate amet.
+                        Enhancing your website involves staying up-to-date with the latest technologies and design trends to remain competitive in the ever-evolving digital landscape.
                         </p>
                     </div>
                 </div>

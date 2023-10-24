@@ -36,28 +36,18 @@ const Features = () => {
             <div class="features-amazingFeatures">
                     <h3 class="features-h1">Amazing Features</h3>
                     <p class="features-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati,
-                        ipsa amet veniam, unde consequuntur voluptate sunt error inventore
-                        corporis deserunt voluptatibus porro delectus consectetur ad nemo
-                        maxime odit doloremque vel, mollitia adipisci. Nisi, voluptates.
-                        Culpa modi iste quos autem aspernatur.
+                    User-Friendly Interface: Our product/service offers an intuitive and user-friendly interface, making it easy for anyone to use. Whether you're a tech-savvy professional or a beginner, you'll appreciate the simplicity and efficiency of our interface.
+
                     </p>
 
                     <div
                         className={"feature_read_class" + (feat ? " feature_active" : "")}
                     >
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit illum
-                        ipsum temporibus veniam rem molestias consequatur doloribus est
-                        sapiente, harum alias pariatur provident voluptate doloremque.
-                        Quibusdam consectetur quos minima? Perferendis sed reprehenderit
-                        tenetur placeat nobis voluptatem eius ipsum totam? Illo inventore ex
-                        pariatur possimus, sapiente provident explicabo nobis tempore, iure
-                        fuga ab totam nam ea. Velit, ad. Dicta dolore ut error deleniti
-                        nostrum maxime dignissimos cumque! Quas, commodi suscipit fugit
-                        laudantium perferendis voluptate cumque modi ipsum et deserunt
-                        quaerat repudiandae possimus porro nihil, sit ut? Harum delectus
-                        accusantium dolorem quos error beatae optio, nemo alias nostrum
-                        rerum doloribus sed atque.
+                        User-Friendly Interface: Our product/service offers an intuitive and user-friendly interface, making it easy for anyone to use. Whether you're a tech-savvy professional or a beginner, you'll appreciate the simplicity and efficiency of our interface.
+
+Advanced Technology Integration: We've harnessed the power of cutting-edge technology to provide you with advanced features and capabilities. From AI-driven recommendations to seamless IoT integration, our solution is at the forefront of technological innovation.
+
+Customization and Personalization: One of the most amazing features is the level of customization and personalization we offer. Tailor the product/service to suit your specific needs and preferences, ensuring that it aligns perfectly with your unique requirements and objectives.
                     </div>
 
                     <button class="features-btn" onClick={Features}>

@@ -103,7 +103,7 @@ const Home = () => {
             setFeatureText(false);
         }
     }
-    
+
 
     const [price_read, setPriceRead] = useState("READ MORE");
     const [price, setPriceText] = useState(false);
@@ -112,7 +112,7 @@ const Home = () => {
             setPriceRead("READ LESS");
             setPriceText(true);
         }
-        
+
         else {
             setPriceRead("READ MORE");
             setPriceText(false);
@@ -126,7 +126,7 @@ const Home = () => {
             setProffRead("READ LESS");
             setProffText(true);
         }
-        
+
         else {
             setProffRead("READ MORE");
             setProffText(false);
@@ -135,7 +135,7 @@ const Home = () => {
 
 
 
-    
+
 
 
     return (
@@ -184,30 +184,26 @@ const Home = () => {
                 <h1>Simply the Best</h1>
                 <p>Reasons for Choosing Us</p>
                 <div class="content-header">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque,
-                    dolores?
+                    Quality and Expertise: Choosing us means you benefit from our unmatched quality and expertise.
                 </div>
                 <div class="content-header-1">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque,
-                    dolores?
+                    Customer-Centric Approach: We prioritize our customers' needs and satisfaction above all else.
                 </div>
 
                 <button className="btn" onClick={readMore}>
                     {text}
                 </button>
                 <div className={"read_more " + (read ? "read_active" : "")}>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
-                    reiciendis itaque sapiente odit recusandae modi in! Aperiam commodi
-                    itaque laboriosam! Lorem ipsum dolor sit amet consectetur adipisicing
-                    elit. Officiis reiciendis itaque sapiente odit recusandae modi in!
-                    Aperiam commodi itaque laboriosam! Lorem ipsum dolor sit amet
-                    consectetur adipisicing elit. Officiis reiciendis itaque sapiente odit
-                    recusandae modi in! Aperiam commodi itaque laboriosam! Lorem ipsum
-                    dolor sit amet consectetur adipisicing elit. Officiis reiciendis
-                    itaque sapiente odit recusandae modi in! Aperiam commodi itaque
-                    laboriosam!
+                    Quality and Reliability: We are committed to delivering products/services that meet the highest quality standards. Our track record of reliability and consistency ensures that you can trust us to meet your expectations every time. You can count on us for a dependable and durable solution.
+
+                    Competitive Pricing: We offer competitive pricing without compromising on quality. We understand the importance of value for your money, and our cost-effective solutions make choosing us a smart financial decision.
+
+                    Exceptional Customer Support: Your satisfaction is our priority. We provide exceptional customer support throughout your journey with us. Our responsive and knowledgeable support team is always available to address your concerns and provide assistance, ensuring a smooth and hassle-free experience.
+                    Quality and Reliability: We are committed to delivering products/services that meet the highest quality standards. Our track record of reliability and consistency ensures that you can trust us to meet your expectations every time. You can count on us for a dependable and durable solution.
+
                 </div>
             </header>
+
 
 
 
@@ -233,9 +229,7 @@ const Home = () => {
                         <img src={img1} alt="img" />
                         <h3>Best TrackRecord</h3>
                         <div class="header-fig-text">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                            Necessitatibus esse pariatur, nisi libero recusandae cupiditate
-                            natus neque ullam dolorem aut. hello ji
+                            We have a long and successful track record in our industry. Our consistent performance and history of achieving outstanding results demonstrate our commitment to excellence and our ability to meet and exceed our customers' expectations. You can trust in our proven success.
                         </div>
 
                         <div
@@ -243,16 +237,8 @@ const Home = () => {
                                 "read_more_header " + (read_head ? "read_active_header" : "")
                             }
                         >
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
-                            reiciendis itaque sapiente odit recusandae modi in! Aperiam
-                            commodi itaque laboriosam! Lorem ipsum dolor sit amet consectetur
-                            adipisicing elit. Officiis reiciendis itaque sapiente odit
-                            recusandae modi in! Aperiam commodi itaque laboriosam! Lorem ipsum
-                            dolor sit amet consectetur adipisicing elit. Officiis reiciendis
-                            itaque sapiente odit recusandae modi in! Aperiam commodi itaque
-                            laboriosam! Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Officiis reiciendis itaque sapiente odit recusandae modi in!
-                            Aperiam commodi itaque laboriosam!
+                            We have a long and successful track record in our industry. Our consistent performance and history of achieving outstanding results demonstrate our commitment to excellence and our ability to meet and exceed our customers' expectations. You can trust in our proven success.
+                            Our track record is backed by a large and satisfied customer base. Many of our customers have not only returned for repeat business but have also referred others to us. Their positive experiences and testimonials reflect our dedication to delivering quality and value, making us the top choice in the industry.
                         </div>
                         <button class="header-fig-btn" onClick={header_read}>
                             {header_text}
@@ -264,26 +250,15 @@ const Home = () => {
                         <img src={img2} alt="img" />
                         <h3>Trusted by Leaders</h3>
                         <div class="header-fig-text">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                            Necessitatibus esse pariatur, nisi libero recusandae cupiditate
-                            natus neque ullam dolorem aut. hello ji
+                        Our product/service has gained the trust and very good trusted by endorsement of industry leaders and prominent figures. These influential individuals and organizations rely on our offerings, recognizing the quality and value we provide. Their trust is a testament to our reputation and reliability.
                         </div>
 
                         <div
                             className={
                                 "read_more_header " + (read_head1 ? "read_active_header" : "")
                             }
-                        >
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
-                            reiciendis itaque sapiente odit recusandae modi in! Aperiam
-                            commodi itaque laboriosam! Lorem ipsum dolor sit amet consectetur
-                            adipisicing elit. Officiis reiciendis itaque sapiente odit
-                            recusandae modi in! Aperiam commodi itaque laboriosam! Lorem ipsum
-                            dolor sit amet consectetur adipisicing elit. Officiis reiciendis
-                            itaque sapiente odit recusandae modi in! Aperiam commodi itaque
-                            laboriosam! Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Officiis reiciendis itaque sapiente odit recusandae modi in!
-                            Aperiam commodi itaque laboriosam!
+                        >Leaders in various sectors have experienced significant success and positive outcomes by choosing our product/service. Their success stories and testimonials serve as evidence of our capability to deliver results that meet the high standards expected by industry leaders. When leaders choose us, it's because we've consistently proven our worth.
+                            Our product/service has gained the trust and endorsement of industry leaders and prominent figures. These influential individuals and organizations rely on our offerings, recognizing the quality and value we provide. Their trust is a testament to our reputation and reliability.!
                         </div>
                         <button class="header-fig-btn" onClick={header_read1}>
                             {header_text1}
@@ -294,9 +269,7 @@ const Home = () => {
                         <img src={img3} alt="img" />
                         <h3>Brand Equity</h3>
                         <div class="header-fig-text">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                            Necessitatibus esse pariatur, nisi libero recusandae cupiditate
-                            natus neque ullam dolorem aut. hello ji
+                        Our brand enjoys a high level of trust and recognition in the market. Over time, we have consistently delivered quality products/services, built a solid reputation, and established a strong presence. This trust and recognition mean that consumers and clients can rely on us to meet their needs and expectations.
                         </div>
 
                         <div
@@ -304,16 +277,8 @@ const Home = () => {
                                 "read_more_header " + (read_head2 ? "read_active_header" : "")
                             }
                         >
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
-                            reiciendis itaque sapiente odit recusandae modi in! Aperiam
-                            commodi itaque laboriosam! Lorem ipsum dolor sit amet consectetur
-                            adipisicing elit. Officiis reiciendis itaque sapiente odit
-                            recusandae modi in! Aperiam commodi itaque laboriosam! Lorem ipsum
-                            dolor sit amet consectetur adipisicing elit. Officiis reiciendis
-                            itaque sapiente odit recusandae modi in! Aperiam commodi itaque
-                            laboriosam! Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Officiis reiciendis itaque sapiente odit recusandae modi in!
-                            Aperiam commodi itaque laboriosam!
+                            Our brand enjoys a high level of trust and recognition in the market. Over time, we have consistently delivered quality products/services, built a solid reputation, and established a strong presence. This trust and recognition mean that consumers and clients can rely on us to meet their needs and expectations.
+                            Our brand's equity extends to the premium value associated with our offerings. Customers are often willing to pay a premium for our products/services because they associate our brand with quality, reliability, and a superior customer experience. This added value is a reflection of the strength of our brand in the market.
                         </div>
                         <button class="header-fig-btn" onClick={header_read2}>
                             {header_text2}
@@ -344,15 +309,8 @@ const Home = () => {
                 <div class="about-us-container">
                     <p class="about-us-h1">We are Creative Agency</p>
                     <p class="about-us-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
-                        quae, minima, qui alias quo eius, blanditiis natus in ut optio
-                        soluta eum repellat sapiente praesentium. Minima quas voluptates
-                        eveniet suscipit nihil atque laboriosam iusto? Minima officia
-                        doloribus qui odio aliquid at quae consequatur quidem iste
-                        blanditiis? Optio totam doloribus, sunt inventore blanditiis
-                        similique accusamus saepe voluptatibus earum iste, maxime, voluptate
-                        placeat harum! Voluptatum assumenda laudantium magni ipsam amet aut
-                        sunt?
+                    As a creative agency, we specialize in delivering innovative and cutting-edge solutions for our clients. We take a fresh and imaginative approach to every project, utilizing the latest design, marketing, and technology trends to create unique and attention-grabbing campaigns that set our clients apart in their respective industries.
+                    We understand that each client is unique, and we take a tailored and strategic approach to meet their specific goals and challenges. Our team works closely with clients to understand their brand, target audience, and objectives, ensuring that every creative solution we provide is not only visually appealing but also strategically aligned to drive results.
                     </p>
 
                     <div
@@ -361,24 +319,19 @@ const Home = () => {
                             (text_creative ? "creative_active_header" : "")
                         }
                     >
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
-                        quae praesentium aut ipsum, quod vitae fugiat tempora debitis
-                        consequatur. Asperiores nulla provident harum ex ipsum corrupti,
-                        odit rem sapiente facilis consectetur suscipit odio iure, rerum
-                        ipsa! Placeat sit facilis perspiciatis optio voluptatibus,
-                        laboriosam temporibus illum, nulla mollitia sint repudiandae? Fugit?
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
-                        quae praesentium aut ipsum, quod vitae fugiat tempora debitis
-                        consequatur. Asperiores nulla provident harum ex ipsum corrupti,
-                        odit rem sapiente facilis consectetur suscipit odio iure, rerum
-                        ipsa! Placeat sit facilis perspiciatis optio voluptatibus,
-                        laboriosam temporibus illum, nulla mollitia sint repudiandae? Fugit?
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
-                        quae praesentium aut ipsum, quod vitae fugiat tempora debitis
-                        consequatur. Asperiores nulla provident harum ex ipsum corrupti,
-                        odit rem sapiente facilis consectetur suscipit odio iure, rerum
-                        ipsa! Placeat sit facilis perspiciatis optio voluptatibus,
-                        laboriosam temporibus illum, nulla mollitia sint repudiandae? Fugit?
+                        Diverse Creative Talents: Our creative agency boasts a diverse team of talented professionals with expertise in various creative disciplines, including graphic design, web development, content creation, and digital marketing. This diversity allows us to offer comprehensive and integrated solutions that cater to all your creative needs.
+
+Proven Track Record: We have a solid track record of delivering successful and award-winning creative projects for a wide range of clients. Our portfolio showcases our ability to bring creativity to life while achieving measurable results. When you choose us, you're partnering with a proven creative agency.
+
+Client-Centric Collaboration: We value collaboration with our clients. Our client-centric approach ensures that we work closely with you to understand your vision and objectives. Your input and feedback are integral to our creative process, resulting in solutions that align perfectly with your brand and goals.
+
+Innovative Problem Solvers: We are not just creative; we're also innovative problem solvers. We thrive on finding unique solutions to your challenges, whether it's enhancing your brand's visibility, improving user engagement, or boosting conversions. Our ability to think outside the box sets us apart in the creative industry.
+
+
+
+
+
+
                     </div>
                     <button class="about-us-btn" onClick={creative}>
                         {read_more_creative}
@@ -393,15 +346,7 @@ const Home = () => {
                     <p class="about-us-h2">''</p>
 
                     <p class="about-us-text2">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
-                        quae, minima, qui alias quo eius, blanditiis natus in ut optio
-                        soluta eum repellat sapiente praesentium. Minima quas voluptates
-                        eveniet suscipit nihil atque laboriosam iusto? Minima officia
-                        doloribus qui odio aliquid at quae consequatur quidem iste
-                        blanditiis? Optio totam doloribus, sunt inventore blanditiis
-                        similique accusamus saepe voluptatibus earum iste, maxime, voluptate
-                        placeat harum! Voluptatum assumenda laudantium magni ipsam amet aut
-                        sunt?
+                    "Imagination is more important than knowledge. For knowledge is limited, whereas imagination embraces the entire world, stimulating progress, giving birth to evolution."
                     </p>
 
                     <p class="about-us-h1">Geetansh Jain</p>
@@ -436,28 +381,18 @@ const Home = () => {
                 <div class="features-amazingFeatures">
                     <h3 class="features-h1">Amazing Features</h3>
                     <p class="features-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati,
-                        ipsa amet veniam, unde consequuntur voluptate sunt error inventore
-                        corporis deserunt voluptatibus porro delectus consectetur ad nemo
-                        maxime odit doloremque vel, mollitia adipisci. Nisi, voluptates.
-                        Culpa modi iste quos autem aspernatur.
+                    User-Friendly Interface: Our product/service offers an intuitive and user-friendly interface, making it easy for anyone to use. Whether you're a tech-savvy professional or a beginner, you'll appreciate the simplicity and efficiency of our interface.
+
                     </p>
 
                     <div
                         className={"feature_read_class" + (feat ? " feature_active" : "")}
                     >
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit illum
-                        ipsum temporibus veniam rem molestias consequatur doloribus est
-                        sapiente, harum alias pariatur provident voluptate doloremque.
-                        Quibusdam consectetur quos minima? Perferendis sed reprehenderit
-                        tenetur placeat nobis voluptatem eius ipsum totam? Illo inventore ex
-                        pariatur possimus, sapiente provident explicabo nobis tempore, iure
-                        fuga ab totam nam ea. Velit, ad. Dicta dolore ut error deleniti
-                        nostrum maxime dignissimos cumque! Quas, commodi suscipit fugit
-                        laudantium perferendis voluptate cumque modi ipsum et deserunt
-                        quaerat repudiandae possimus porro nihil, sit ut? Harum delectus
-                        accusantium dolorem quos error beatae optio, nemo alias nostrum
-                        rerum doloribus sed atque.
+                        User-Friendly Interface: Our product/service offers an intuitive and user-friendly interface, making it easy for anyone to use. Whether you're a tech-savvy professional or a beginner, you'll appreciate the simplicity and efficiency of our interface.
+
+Advanced Technology Integration: We've harnessed the power of cutting-edge technology to provide you with advanced features and capabilities. From AI-driven recommendations to seamless IoT integration, our solution is at the forefront of technological innovation.
+
+Customization and Personalization: One of the most amazing features is the level of customization and personalization we offer. Tailor the product/service to suit your specific needs and preferences, ensuring that it aligns perfectly with your unique requirements and objectives.
                     </div>
 
                     <button class="features-btn" onClick={Features}>
@@ -481,21 +416,13 @@ const Home = () => {
                 <div class="serve-container1">
                     <h3 class="services-h3">Services We Provide</h3>
                     <div class="services-text">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
-                        eveniet et nemo omnis voluptatibus similique, magni repellat
-                        voluptas repellendus enim recusandae minus aperiam velit saepe
-                        aliquid ipsa sit. Impedit numquam, officia perferendis facere
-                        architecto eligendi praesentium incidunt dolorum voluptatibus et
-                        velit ad atque deleniti, amet recusandae voluptatem! Aperiam sit
-                        blanditiis, nisi eaque es
+                    Web Development and Design: We specialize in creating captivating and functional websites tailored to your brand's identity. Our web development and design services encompass everything from user-friendly interfaces to responsive design, ensuring a seamless and engaging online presence for your business.
                     </div>
 
-                    <div  className={"price_read_class " + (price ? " price_active" : "")}>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
-                        corporis, deserunt repellendus, veritatis quasi voluptates
-                        consequuntur voluptatem tempore nisi suscipit vitae ab? Nesciunt
-                        impedit omnis voluptate soluta ullam exercitationem repellendus est
-                        natus
+                    <div className={"price_read_class " + (price ? " price_active" : "")}>
+                    Web Development and Design: We specialize in creating captivating and functional websites tailored to your brand's identity.
+Digital Marketing: Our digital marketing services are designed to boost your online visibility and reach your target audience effectively. From search engine optimization (SEO) and social media management to pay-per-click (PPC) advertising, we offer a comprehensive range of digital marketing strategies to drive traffic and conversions.
+
                     </div>
                     <button class="services-btn" onClick={prices}>{price_read}</button>
                 </div>
@@ -548,10 +475,7 @@ const Home = () => {
             <div class="teams" id="team-div">
                 <div class="teams-h1">We are Perfect Teams</div>
                 <div class="teams-text">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos
-                    assumenda consequatur repellendus tempore nemo facere quae, ad,
-                    cupiditate molestias vel in. Odio doloribus assumenda voluptate rerum
-                    nostrum esse, cum earum sunt, blanditiis in eos quo eaque placeat
+                Our teams are a perfect blend of experts who collaborate seamlessly to deliver exceptional results. Each team member brings unique skills and knowledge to the table, ensuring that we can tackle any challenge and provide you with the best solutions.
                 </div>
 
                 <div class="teams-container"></div>
@@ -599,12 +523,9 @@ const Home = () => {
                     <h2 class="member-container1-h2">Anita Allen</h2>
                     <h3 class="member-container1-h3">Graphic Designer</h3>
                     <div class="member-container1-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
-                        distinctio magni magnam quae, saepe doloremque fugit ipsum vero
-                        quaerat, nam incidunt, sunt repudiandae corrupti cupiditate! Laborum
-                        quisquam esse, dolores, excepturi facere perferendis tempore est
-                        velit sed, mollitia similique impedit ex qui exercitationem cumque?
-                        Asperiores illo expedita totam atque incidunt eum!.
+                    I recently had the pleasure of working with Geetansh on the design of my website, and I must say that the experience was truly exceptional. Geetansh is a highly skilled and creative web designer who has transformed my online presence with a stunning and user-friendly website.
+
+From our initial discussions, it was clear that Geetansh had a deep understanding of web design principles and a keen eye for detail. He took the time to understand my brand, its values, and the objectives I had for the website. This understanding was evident in the design concepts he presented.
                     </div>
 
                     <div class="member-ranges">
@@ -635,13 +556,12 @@ const Home = () => {
 
                 <div class="member-container3">
                     <div class="member-container3-text">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum
-                        dolor eos eius blanditiis odit quia maiores ut ipsum at odio.
+                    I recently experienced this product, and I must say, it exceeded my expectations. The quality and performance are exceptional, and it's been a game-changer for me. I highly recommend it to anyone seeking top-notch results.
                     </div>
                     <div class="member-container3-logos">
-                    <a href="https://www.facebook.com/Geetansh_Jain" style={{color:"white"}} target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                        <a href="https://www.google.com" style={{color:"white"}} target="_blank"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a>
-                        <a href="https://www.google.com/" style={{color:"white"}} target="_blank"><i class="fa fa-google-wallet" aria-hidden="true"></i></a>
+                        <a href="https://www.facebook.com/Geetansh_Jain" style={{ color: "white" }} target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="https://www.google.com" style={{ color: "white" }} target="_blank"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a>
+                        <a href="https://www.google.com/" style={{ color: "white" }} target="_blank"><i class="fa fa-google-wallet" aria-hidden="true"></i></a>
                     </div>
                 </div>
             </div>
@@ -674,9 +594,7 @@ const Home = () => {
                                     fontFamily: "arial",
                                 }}
                             >
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum
-                                nihil veritatis accusamus eveniet odio temporibus dolores
-                                aspernatur.
+Geetansh's website design services are exceptional. He combines creativity and technical expertise to create user-friendly, visually appealing websites that align perfectly with the brand's identity and goals, all while staying up-to-date with the latest design trends and technologies.
                             </p>
                         </span>
                     </div>
@@ -686,28 +604,27 @@ const Home = () => {
                             <p>Feature</p>
                         </div>
                         <ul class="p-list">
-                            <li>Lorem ipsum dolor sitr</li>
-                            <li>Lorem ipsum dolor sitr</li>
-                            <li>voluptatem ratione</li>
-                            <li>ad odio architecto quis</li>
-                            <li>esse inventore! Non</li>
-                            <li>quae, reprehenderit odit amet!</li>
+                            <li>Geetansh crafts unique website designs tailored to your brand.</li>
+                            <li>His layouts prioritize easy navigation and a great user experience.</li>
+                            <li>Websites work flawlessly on any device, enhancing accessibility.</li>
+
                         </ul>
 
                         <ul className={
                             "prof_more_header " +
                             (proff_text ? "prof_active_header" : "")
                         }>
-                            <li>Lorem ipsum dolor sitr</li>
-                            <li>Lorem ipsum dolor sitr</li>
-                            <li>voluptatem ratione</li>
-                            <li>ad odio architecto quis</li>
-                            <li>esse inventore! Non</li>
-                            <li>quae, reprehenderit odit amet!</li>
+                            <li>Geetansh crafts unique website designs tailored to your brand.</li>
+                            <li>His layouts prioritize easy navigation and a great user experience.</li>
+                            <li>Websites work flawlessly on any device, enhancing accessibility.</li>
+                            <li> Every aspect, from fonts to imagery, receives meticulous attention.</li>
+
+
+
                         </ul>
                         <div class="p-btn-container">
-                            <button class="p-btn"onClick={proffessionals}>
-                        {proff_read}</button>
+                            <button class="p-btn" onClick={proffessionals}>
+                                {proff_read}</button>
                         </div>
                     </div>
                 </div>
@@ -715,16 +632,10 @@ const Home = () => {
                     <div class="p3-container">
                         <h1 class="p3-h1">Take Your Website To The Next Level</h1>
                         <p class="p3-p1">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum
-                            commodi doloribus modi facilis maxime error quo architecto,
-                            eveniet quod sit animi molestiae veniam, delectus, magni incidunt
-                            minima cumque distinctio dicta!
+                        Taking your website to the next level requires a strategic focus on user experience, design, and communication to ensure it aligns with your brand's identity and objectives.
                         </p>
                         <p class="p3-p2">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
-                            veniam minima fugiat nisi commodi, recusandae minus dolores
-                            ducimus aliquid accusantium eius molestias voluptatibus hic et
-                            nobis a cupiditate voluptate amet.
+                        Enhancing your website involves staying up-to-date with the latest technologies and design trends to remain competitive in the ever-evolving digital landscape.
                         </p>
                     </div>
                 </div>
@@ -743,12 +654,12 @@ const Home = () => {
                 <div class="touch" id="contact-div">
                     <div class="touch-h1">GetinTouch</div>
                     <div class="touch-logos">
-                        <a href="https://www.facebook.com/Geetansh_Jain" style={{color:"white"}} target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                        <a href="https://www.google.com" style={{color:"white"}} target="_blank"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a>
-                        <a href="https://www.google.com/" style={{color:"white"}} target="_blank"><i class="fa fa-google-wallet" aria-hidden="true"></i></a>
-                        <a href="https://www.youtube.com/" style={{color:"white"}} target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a>
-                        <a href="https://www.linkedin.com/in/geetansh-jain-81995322a/" style={{color:"white"}} target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                        <a href="https://digg.com/" style={{color:"white"}} target="_blank"><i class="fa fa-digg" aria-hidden="true"></i></a>
+                        <a href="https://www.facebook.com/Geetansh_Jain" style={{ color: "white" }} target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="https://www.google.com" style={{ color: "white" }} target="_blank"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a>
+                        <a href="https://www.google.com/" style={{ color: "white" }} target="_blank"><i class="fa fa-google-wallet" aria-hidden="true"></i></a>
+                        <a href="https://www.youtube.com/" style={{ color: "white" }} target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                        <a href="https://www.linkedin.com/in/geetansh-jain-81995322a/" style={{ color: "white" }} target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        <a href="https://digg.com/" style={{ color: "white" }} target="_blank"><i class="fa fa-digg" aria-hidden="true"></i></a>
                     </div>
                 </div>
 

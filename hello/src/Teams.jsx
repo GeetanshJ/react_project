@@ -17,9 +17,8 @@ const Teams = () => {
 
             <div class="teams" id="team-div">
             <div class="teams-h1">We are Perfect Teams</div>
-            <div class="teams-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos assumenda consequatur
-                repellendus tempore nemo facere quae, ad, cupiditate molestias vel in. Odio doloribus assumenda voluptate
-                rerum nostrum esse, cum earum sunt, blanditiis in eos quo eaque placeat
+            <div class="teams-text">                Our teams are a perfect blend of experts who collaborate seamlessly to deliver exceptional results. Each team member brings unique skills and knowledge to the table, ensuring that we can tackle any challenge and provide you with the best solutions.
+
             </div>
 
             <div class="teams-container">

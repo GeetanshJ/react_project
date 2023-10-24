@@ -84,9 +84,7 @@ const Contact = () => {
                                 <p class="text-blk contactus-head">
                                     Get in Touch
                                 </p>
-                                <p class="text-blk contactus-subhead">
-                                    Nunc erat cursus tellus gravida.
-                                </p>
+
                                 <div class="responsive-container-block">
                                     <div class="responsive-cell-block wk-ipadp-6 wk-tab-12 wk-mobile-12 wk-desk-6" id="i10mt">
                                         <p class="text-blk input-title">
