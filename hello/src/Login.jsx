@@ -85,10 +85,12 @@ const Login = () => {
                         </form>
                     </div>
                 </div>
+                <div className="actual_p">
 
                 <div className = {(all  ? " actual " : " demo ")}>
                     <p className={"data"}>Email: {name}</p>
                     <p className={"data"}>Password: {pass}</p>
+                </div>
                 </div>
             </div>
             <Footer />

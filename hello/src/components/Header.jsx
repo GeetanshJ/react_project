@@ -6,11 +6,9 @@ function Header({path}) {
 
   function handleHam(){
     if(ham == true){
-      console.log("dsdss");
       setHam(false);
     }
     else{
-      console.log("dsdssdgsgfgfdskkks");
       setHam(true);
     }
   }

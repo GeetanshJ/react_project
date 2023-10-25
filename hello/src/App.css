@@ -187,14 +187,22 @@ header h1 {
 }
 .actual{
   display: flex;
-  justify-content: center;
-  align-items: center;
+  border: 1px solid black;
+  justify-content: flex-start;
   flex-direction: column;
+  width: 30%;
+}
+
+.actual_p{
+  display: flex;
+  justify-content: center;
 }
 
 .data{
   padding: 1rem;
-  font-size: 1.5rem;
+  display: flex;
+  justify-content: flex-start;
+  font-size: 1.2rem;
   font-family: arial;
 }
 
@@ -1159,8 +1167,22 @@ article {
   text-align: center;
 }
 
-@media (max-width: 955px) {
 
+@media (max-width: 955px) {
+  .actual{
+    display: flex;
+    border: 1px solid black;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 60%;
+  }
+  .data{
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 0.8rem;
+    font-family: arial;
+  }
   .header-1 {
       /* overflow-y: hidden; */
       display: flex;

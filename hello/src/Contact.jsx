@@ -17,7 +17,6 @@ const Contact = () => {
     const phone_ref = useRef();
     const mind_ref = useRef();
 
-
     const handleRef = () => {
         SetFirst(first_ref.current.value);
 
@@ -45,7 +44,7 @@ const Contact = () => {
         }
 
     }
-
+    
     function Contact(){
         if(first === ""){
             alert("Enter First name")
@@ -132,7 +131,7 @@ const Contact = () => {
                 </div>
             </div>
 
-
+            <div className="actual_p">
             <div className = {(all  ? " actual " : " demo ")}>
                         <p className={"data"}>First Name: {first}</p>
                         <p className={"data"}>Last Name: {last}</p>
@@ -140,6 +139,7 @@ const Contact = () => {
                         <p className={"data"}>Phone Number: {phone}</p>
                         <p className={"data"}>Query: {mind}</p>
                     </div>
+            </div>
             <Footer/>
         </div>
     )

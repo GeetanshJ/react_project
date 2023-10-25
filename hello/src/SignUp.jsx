@@ -132,12 +132,15 @@ const SignUp = () => {
                         </div>
                 </div>
             </div>
+            <div className="actual_p">
+
 
             <div className = {(all  ? " actual " : " demo ")}>
                 <p className={"data"}>First Name: {first}</p>
                 <p className={"data"}>Last Name: {last}</p>
                 <p className={"data"}>Email: {email}</p>
                 <p className={"data"}>Password: {pass1}</p>
+            </div>
             </div>
             <Footer />
         </div>
