@@ -7,16 +7,15 @@
 </head>
 <body style="margin: 0;padding: 0;">
     <div style = "background:linear-gradient(70deg, rgba(206, 120, 40, 0.932), rgba(22, 76, 201, 0.962));display: flex;align-items: baseline;justify-content: space-between;">
-        <div style = "font-size: 40px;font-family: arial;color:white;font-weight: 800;margin-left: 100px;">Digital</div>
         
         <ul style = "display: flex;justify-content: space-between;align-items: baseline;text-decoration: none;color: white;flex-direction: row;  list-style-type: none;">
-            <li style = "margin-right: 35px;"><a href="/listemp" style = "text-decoration: none;color: white;font-size: 17px;font-family: arial;font-weight: 700;">Employee List</a></li>
-            <li style = "margin-right: 35px;"><a href="/addemp" style = "text-decoration: none;color: white;font-size: 17px;font-family: arial;font-weight: 700;">Add Employee</a></li>
             <li style = "margin-right: 35px;"><a href="/" style = "text-decoration: none;;color: white;font-size: 17px;font-family: arial;font-weight: 700;">Home</a></li>
+
+            <li style = "margin-right: 35px;"><a href="/listemp" style = "text-decoration: none;color: white;font-size: 17px;font-family: arial;font-weight: 700;">Employee List</a></li>
         </ul>
     </div><br>
     <form action="/addemp_submit" method="post">
-        <table style="width:500px;margin: 0 auto;background:linear-gradient(70deg, rgba(206, 120, 40, 0.932), rgba(22, 76, 201, 0.962));padding: 40px;">
+        <table style="width:500px;margin: 0 auto;background:linear-gradient(70deg, rgba(206, 120, 40, 0.932), rgba(22, 76, 201, 0.962));padding: 40px;color:white;font-family: arial;">
             <tr>
                 <td>Employee Name</td>
                 <td><input type="text" name="ename" value="<%= result.ename %>"></td>
