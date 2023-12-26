@@ -23,23 +23,18 @@
                 <td>Action</td>
 
             </tr>
-            <% if (result && result.length) { %>
                 <% for(var i = 0; i < result.length; i++) { %>
                     <tr>
                         <td><%= result[i].deptid %></td>
                         <td><%= result[i].dname %></td>
 
                         <td>
-                            <a href="/editemp" style = "color: white;">Edit</a>
-                            <a href="/editemp" style = "color: white;">Delete</a>
+                            <a href="/editdept?deptid=<%= result[i].deptid %>" style="color: white;">Edit</a>
+                            <a href="/deletedept?deptid=<%= result[i].deptid %>" style="color: white;">Delete</a>
                         </td>
                     </tr>
-                <% } %>
-            <% } else { %>
-                <tr>
-                    <td colspan="4">No data available</td>
-                </tr>
             <% } %>
+
         </table>
     </div>
 </body>

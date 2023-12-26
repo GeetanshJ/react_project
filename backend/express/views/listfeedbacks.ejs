@@ -14,7 +14,7 @@
         </ul>
     </div><br>
 
-    <div style="width:800px;margin: 0 auto;background:linear-gradient(70deg, rgba(206, 120, 40, 0.932), rgba(22, 76, 201, 0.962));color:white;">
+    <div style="width:1300px;margin: 0 auto;background:linear-gradient(70deg, rgba(206, 120, 40, 0.932), rgba(22, 76, 201, 0.962));color:white;">
         <table align="center" border="1" cellspacing="5" style="font-family: arial;padding: 35px;">
             <tr>
                 <td>Client Name</td>
@@ -25,7 +25,6 @@
                 <td>Service Used</td>
                 <td>Action</td>
             </tr>
-            <% if (result && result.length) { %>
                 <% for(var i = 0; i < result.length; i++) { %>
                     <tr>
                         <td><%= result[i].client_name %></td>
@@ -36,16 +35,12 @@
                         <td><%= result[i].service_name %></td>
 
                         <td>
-                            <a href="/editemp" style = "color: white;">Edit</a>
-                            <a href="/editemp" style = "color: white;">Delete</a>
+                            <a href="/editfeedback?client_id=<%= result[i].client_id %>" style="color: white;">Edit</a>
+                            <a href="/deletefeedback?client_id=<%= result[i].client_id %>" style="color: white;">Delete</a>
                         </td>
                     </tr>
                 <% } %>
-            <% } else { %>
-                <tr>
-                    <td colspan="4">No data available</td>
-                </tr>
-            <% } %>
+
         </table>
     </div>
 </body>

@@ -30,8 +30,8 @@
                         <td><%= result[i].service_name %></td>
 
                         <td>
-                            <a href="/editemp" style = "color: white;">Edit</a>
-                            <a href="/editemp" style = "color: white;">Delete</a>
+                            <a href="/editservice?service_id=<%= result[i].service_id %>" style="color: white;">Edit</a>
+                            <a href="/deleteservice?service_id=<%= result[i].service_id %>" style="color: white;">Delete</a>
                         </td>
                     </tr>
                 <% } %>
